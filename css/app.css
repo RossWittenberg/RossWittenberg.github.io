@@ -223,7 +223,33 @@ li#about.small_nav, li#work.small_nav, li#contact.small_nav  {
 	text-align: justify;
 	line-height: 28px;
 }
+#about_me_footer{
+	width: 650px;
+	height: 300px;
+	position: absolute;
+	top: 62%;
+	right: 5%;
+	z-index: 6;
+}
+#about_me_footer li{
+	display: inline;
+	padding-right: 50px;
+}
+#about_me_footer a{
+	font-family: Lato;
+	text-decoration: none;
+	font-weight: 300;
+	color: #383838;
+}
+#about_me_footer a:hover{
+	cursor: pointer;
+	color: goldenrod;
+}
 
+i.icon-file-alt {
+	font-size: 36px;
+	z-index: 7;
+}
 
 .container.work{
 	position: absolute;

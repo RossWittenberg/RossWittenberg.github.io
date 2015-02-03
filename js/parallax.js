@@ -13,6 +13,12 @@ $(document).ready(function(){
 				$(window).scrollTop(0)
 		});
 
+		$(document.body).on('click', '#about', function(event) {
+				event.preventDefault();
+				scrolled = 0;
+				$(window).scrollTop(vh-50)
+		});
+
 		$('.header_blackout_div').css('opacity', (scrolled * .002 ) );
 		
 		$('.header_container').css({'top': 50 + (scrolled *.6) + 'px'});
