@@ -65,7 +65,7 @@ p#home:hover{
 	z-index: 1;
 }
 .header_whiteout_div {
-	background-color: whitesmoke;
+	background-color: #2E2E2E;
 	position: absolute;
 	top: 0;
 	width: 100vw;
@@ -74,7 +74,6 @@ p#home:hover{
 	z-index: 3;
 	opacity: 0;
 }
-
 .header_text {
 	position: fixed;
 	left: 5%;
@@ -110,13 +109,18 @@ p#home:hover{
 }	
 
 .links li:visited, li:link, li:active{
-	color: silver;
+	color: #CCCCCC;
 	text-decoration: none;
 	cursor: pointer;
 }
 
 .links li:hover {
-	color: #0C3866;
+	color: #CCCCCC;
+	text-decoration: none;
+	cursor: pointer;
+}
+p#home:hover {
+	color: #CCCCCC;
 	text-decoration: none;
 	cursor: pointer;
 }
@@ -134,7 +138,7 @@ li#about.small_nav, li#work.small_nav, li#contact.small_nav  {
 }
 
 .small_nav li:hover {
-	color: #0C3866;
+	color: #CCCCCC;
 	text-decoration: none;
 	cursor: pointer;
 }
@@ -143,7 +147,9 @@ li#about.small_nav, li#work.small_nav, li#contact.small_nav  {
 	display: none;
 	position: fixed;
 	top: 0;
+	padding: 12px 0;
 	width: 100vw;
+	background-color: transparent;
 	height: 35px;
 	z-index: 12;
 }
@@ -151,11 +157,12 @@ li#about.small_nav, li#work.small_nav, li#contact.small_nav  {
 	display: none;
 	position: fixed;
 	top: 0;
-	background-color: whitesmoke;
+	background-color: #2E2E2E;
+	padding: 12px ;
 	width: 100vw;
 	height: 35px;
 	z-index: -1;
-	opacity: .9;
+	opacity: .5;
 }
 .nav p{
 	font-family: Lato;
@@ -164,16 +171,16 @@ li#about.small_nav, li#work.small_nav, li#contact.small_nav  {
 	padding-top: 4px;
 	padding-left: 4px;
 	font-size: 36px;
-	color: dimgray;
+	color: goldenrod;
 }
 
 .nav li{
 	font-size: 24px;
-	color: dimgray;
+	color: #CCCCCC;
 }
 
 .nav li:hover{
-	color: #0C3866;
+	color: goldenrod;
 	text-decoration: none;
 	cursor: pointer;	
 }
@@ -184,12 +191,14 @@ li#about.small_nav, li#work.small_nav, li#contact.small_nav  {
 	width: 100vw;
 	height: 100vh;
 	z-index: 5;
-	background-color: whitesmoke;
+	background-color: #2E2E2E;
 }
 
 .container.about #about_header{
 	width: 216px;
-	margin: 40px auto;
+	margin: 70px auto;
+	margin-bottom: 40px;
+
 }
 
 .container.about h1{
@@ -197,15 +206,15 @@ li#about.small_nav, li#work.small_nav, li#contact.small_nav  {
 	margin: 5% auto;
 	font-family: Lato;
 	font-weight: 400;
-	font-size: 42px;
-	color: #0C3866;
+	font-size: 36px;
+	color: #CCCCCC;
 	text-transform: uppercase;
 }
 
 #portrait_container {
 	width: 20vw;
 	height: 40vh;
-	margin: 0 20%;
+	margin: 0 8%;
 	z-index: 6;
 }
 
@@ -217,18 +226,18 @@ li#about.small_nav, li#work.small_nav, li#contact.small_nav  {
 
 #text_container {
 	overflow: auto;
-	width: 40vw;
+	width: 60vw;
 	height: 60vh;
 	position: absolute;
-	top: 20%;
-	right: 10%;
-	z-index: 6
+	top: 22%;
+	right: 8%;
+	z-index: 6;
 }
 #text_container p {
 	font-family: Lato;
 	font-weight: 300;
-	font-size: 20px;
-	color: #383838;
+	font-size: 18px;
+	color: #CCCCCC;
 	text-align: justify;
 	line-height: 28px;
 }
@@ -242,7 +251,7 @@ li#about.small_nav, li#work.small_nav, li#contact.small_nav  {
 	width: 380px;
 	height: auto;
 	position: absolute;
-	bottom: 10%;
+	bottom: 5%;
 	z-index: 6;
 }
 
@@ -254,7 +263,7 @@ li#about.small_nav, li#work.small_nav, li#contact.small_nav  {
 	font-family: Lato;
 	text-decoration: none;
 	font-weight: 300;
-	color: #383838;
+	color: #474747;
 }
 #about_me_footer a:hover{
 	cursor: pointer;
@@ -272,11 +281,12 @@ i.icon-file-alt {
 	width: 100vw;
 	height: 110%;
 	z-index: 5;
-	background-color: whitesmoke;
+	background-color: #474747;
 }
 .container.work #work_header{
 	width: 131px;
-	margin: 40px auto;
+	margin: 20px auto;
+	margin-top: 70px;
 }
 
 .container.work h1{
@@ -284,8 +294,8 @@ i.icon-file-alt {
 	margin: 5% auto;
 	font-family: Lato;
 	font-weight: 400;
-	font-size: 42px;
-	color: #0C3866;
+	font-size: 36px;
+	color: #CCCCCC;
 	text-transform: uppercase;
 }
 
@@ -294,7 +304,7 @@ i.icon-file-alt {
 	height: auto;
 	display: inline-block;
 	margin: 0 auto;
-	color: #383838;
+	color: #CCCCCC;
 	font-family: Lato;
 	font-weight: 300;
 	font-size: 32px;
@@ -333,7 +343,7 @@ i.icon-file-alt {
 	font-family: Lato;
 	text-decoration: none;
 	font-weight: 300;
-	color: #0C3866;
+	color: #CCCCCC;
 	text-transform: uppercase;
 }
 #projects a:hover{
@@ -343,10 +353,10 @@ i.icon-file-alt {
 
 .container.contact{
 	position: absolute;
-	top: 325%;
+	top: 360%;
 	width: 100vw;
 	height: 100vh;
-	background-color: green;
+	background-color: #616161;
 	z-index: 5;
 }
 

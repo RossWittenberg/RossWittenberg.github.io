@@ -25,7 +25,7 @@ $(document).ready(function(){
 
 		$(document.body).on('click', '#contact', function(event) {
 				event.preventDefault();
-				$(window).scrollTop(3.25*vh)
+				$(window).scrollTop(3.6*vh)
 		});
 
 		$('.header_whiteout_div').css('opacity', (scrolled * .002 ) );
