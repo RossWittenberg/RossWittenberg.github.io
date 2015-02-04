@@ -7,32 +7,43 @@ $(document).ready(function(){
 		console.log(vh)
 		console.log(scrolled)
 
+
 		$(document.body).on('click', '#home', function(event) {
 				event.preventDefault();
-				scrolled = 0;
 				$(window).scrollTop(0)
 		});
 
 		$(document.body).on('click', '#about', function(event) {
 				event.preventDefault();
-				scrolled = 0;
-				$(window).scrollTop(vh-50)
+				$(window).scrollTop(vh)
 		});
 
-		$('.header_blackout_div').css('opacity', (scrolled * .002 ) );
+		$(document.body).on('click', '#work', function(event) {
+				event.preventDefault();
+				$(window).scrollTop(2.25*vh)
+		});
+
+		$(document.body).on('click', '#contact', function(event) {
+				event.preventDefault();
+				$(window).scrollTop(3.25*vh)
+		});
+
+		$('.header_whiteout_div').css('opacity', (scrolled * .002 ) );
 		
-		$('.header_container').css({'top': 50 + (scrolled *.6) + 'px'});
-		$('.header_nav_container').css({'top': 225 + (scrolled *.6) + 'px',
-																		'left': 30 + (scrolled *.6) + '%'	});
+		$('.header_container').css({'top': 5 + (scrolled * .4) + '%'});
+		$('.header_nav_container').css({'top': 255 - (scrolled * .8) + 'px'});
 
-		// $('.about').css('top', 300 - (scrolled * .25) + '%');
-
-		if ( scrolled > vh-220 ) {
+		
+		if ( scrolled > 2.26*vh ){
+			$('.header_image').find('img').attr('src', 'images/dubrovnik.jpg')
+		} else if ( scrolled > vh-200 ) {
 			$('#nav_container').slideDown(200)
 			$('.nav').slideDown(400)
+			$('.header_image').find('img').attr('src', 'images/rocky_beach.jpg')
 		} else { 
 			$('#nav_container').hide()
 			$('.nav').slideUp(400)
+			$('.header_image').find('img').attr('src', 'images/fjord.jpg')
 		}
 
 	})

@@ -5,11 +5,16 @@ body {
 	background-color: whitesmoke;
 	color: goldenrod;
 }
+
+#arrow_container {
+	width: 35px;
+	margin: 0 auto;
+}
+
 img#arrow {
 	position: fixed;
-	bottom: 3%;
-	right: 48%;
 	width: 35px;
+	bottom: 0;
 	height: auto;
 	z-index: 8;
 }
@@ -28,21 +33,21 @@ p#home:hover{
 }
 .header {
 	font-weight: 100;
-	position: absolute;
-	left: 30%;
+	width: 550px;
+	margin: 10% auto;
 	font-family: Lato;
 }
 .header_container {
 	position: absolute;
-	top: 50px;
-	width: 100vw;
+	top: 5%;
+	width: 550px;
 	z-index: 2;
 }
 
 .header_nav_container {
 	position: absolute;
-	top: 225px;
-	width: 100vw;
+	top: 255px;
+	width: 608px;
 	z-index: 6;
 }
 
@@ -51,16 +56,15 @@ p#home:hover{
 }
 
 .header_image img {
-	position: absolute;
+	position: fixed;
 	overflow: hidden;
 	top: 0;
-	width: 100vw;
-	height: 100vh;
-	overflow: hidden;
+	width: 100%;
+	height: 100%;
 	padding: 0;
 	z-index: 1;
 }
-.header_blackout_div {
+.header_whiteout_div {
 	background-color: whitesmoke;
 	position: absolute;
 	top: 0;
@@ -77,8 +81,14 @@ p#home:hover{
 	z-index: 3;
 }
 .header h1 {
-	font-size: 84px;
+	font-size: 80px;
 	font-weight: 300;
+	text-transform: uppercase;
+}
+.header h2 {
+	font-size: 64px;
+	font-weight: 100;
+	color: #0C3866;
 	text-transform: uppercase;
 }
 
@@ -92,8 +102,8 @@ p#home:hover{
 	width: 100%;
 	font-family: Lato;
 	font-weight: 300;
-	font-size: 42px;
-	padding-right: 70px;
+	font-size: 32px;
+	padding-right: 100px;
 	background-color: transparent;
 	color: whitesmoke;
 	text-align: center;
@@ -141,7 +151,7 @@ li#about.small_nav, li#work.small_nav, li#contact.small_nav  {
 	display: none;
 	position: fixed;
 	top: 0;
-	background-color: dimgray;
+	background-color: whitesmoke;
 	width: 100vw;
 	height: 35px;
 	z-index: -1;
@@ -154,12 +164,12 @@ li#about.small_nav, li#work.small_nav, li#contact.small_nav  {
 	padding-top: 4px;
 	padding-left: 4px;
 	font-size: 36px;
-	color: whitesmoke;
+	color: dimgray;
 }
 
 .nav li{
 	font-size: 24px;
-	color: whitesmoke;
+	color: dimgray;
 }
 
 .nav li:hover{
@@ -176,44 +186,43 @@ li#about.small_nav, li#work.small_nav, li#contact.small_nav  {
 	z-index: 5;
 	background-color: whitesmoke;
 }
+
+.container.about #about_header{
+	width: 216px;
+	margin: 40px auto;
+}
+
 .container.about h1{
-	width: 143px;
+	width: 216px;
 	margin: 5% auto;
 	font-family: Lato;
-	font-weight: 300;
-	font-size: 36px;
+	font-weight: 400;
+	font-size: 42px;
 	color: #0C3866;
-}
-.container.about h2{
-	font-family: Lato;
-	font-weight: 100;
-	margin: 2%;
-	font-size: 36px;
-	color: #0C3866;
+	text-transform: uppercase;
 }
 
 #portrait_container {
-	width: 450px;
-	height: 300px;
-	position: absolute;
-	margin: 0;
-	top: 25%;
-	left: 5%;
+	width: 20vw;
+	height: 40vh;
+	margin: 0 20%;
 	z-index: 6;
 }
 
 #portrait_container img {
-	width: 450px;
-	height: 300px;
+	width: 100%;
+	height: auto;
+	border-radius: 200px;
 }
 
 #text_container {
-	width: 650px;
-	height: 300px;
+	overflow: auto;
+	width: 40vw;
+	height: 60vh;
 	position: absolute;
-	top: 24%;
-	right: 5%;
-	z-index: 6;
+	top: 20%;
+	right: 10%;
+	z-index: 6
 }
 #text_container p {
 	font-family: Lato;
@@ -224,13 +233,19 @@ li#about.small_nav, li#work.small_nav, li#contact.small_nav  {
 	line-height: 28px;
 }
 #about_me_footer{
-	width: 650px;
-	height: 300px;
-	position: absolute;
-	top: 62%;
-	right: 5%;
+	width: 380px;
+	height: auto;
+	margin: 0 auto;
 	z-index: 6;
 }
+#about_me_links{
+	width: 380px;
+	height: auto;
+	position: absolute;
+	bottom: 10%;
+	z-index: 6;
+}
+
 #about_me_footer li{
 	display: inline;
 	padding-right: 50px;
@@ -253,25 +268,87 @@ i.icon-file-alt {
 
 .container.work{
 	position: absolute;
-	top: 200%;
+	top: 225%;
 	width: 100vw;
-	height: 100vh;
-	background-color: blue;
+	height: 110%;
+	z-index: 5;
+	background-color: whitesmoke;
+}
+.container.work #work_header{
+	width: 131px;
+	margin: 40px auto;
+}
+
+.container.work h1{
+	width: 131px;
+	margin: 5% auto;
+	font-family: Lato;
+	font-weight: 400;
+	font-size: 42px;
+	color: #0C3866;
+	text-transform: uppercase;
+}
+
+#projects {
+	width: 100vw;
+	height: auto;
+	display: inline-block;
+	margin: 0 auto;
+	color: #383838;
+	font-family: Lato;
+	font-weight: 300;
+	font-size: 32px;
+}
+#project {
+	display: inline;
+	width: 33.33%;
+	padding-top: 10px;
+	float: left;
+	background-color: transparent;
+}
+
+#project_text {
+	position: absolute;
+	width: 50vw;
+	right: 55px;	
+}
+#projects img {
+	width: 80%;
+	height: auto;
+	padding-left: 30px;
+}
+#project h2 {
+	width: auto;
+	margin: 0 auto;
+	padding: 20px;
+	font-size: 18px;
+}
+#project p{
+	font-size: 18px;
+	width: 78%;
+	margin-left: 28px;
+}
+
+#projects a{
+	font-family: Lato;
+	text-decoration: none;
+	font-weight: 300;
+	color: #0C3866;
+	text-transform: uppercase;
+}
+#projects a:hover{
+	cursor: pointer;
+	color: goldenrod;
 }
 
 .container.contact{
 	position: absolute;
-	top: 300%;
+	top: 325%;
 	width: 100vw;
 	height: 100vh;
 	background-color: green;
+	z-index: 5;
 }
-.footer{
-	position: absolute;
-	top: 400%;
-	width: 100vw;
-	height: 20vh;
-	background-color: black;
-}
+
 
 
