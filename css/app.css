@@ -6,6 +6,12 @@ body {
 	color: goldenrod;
 }
 
+#page_marker {
+	background-color: transparent;
+	position: relative;
+	width: 100vw;	
+}
+
 .main_container {
 	height: 360vh;
 	width: 100vw;
@@ -15,6 +21,7 @@ body {
 
 #arrow_container {
 	width: 35px;
+	margin: 0 auto;
 }
 
 img#arrow {
@@ -103,19 +110,23 @@ p#home:hover{
 	padding: 0;
 }
 
-.links li {
+.links li, .links a {
 	display: inline;
 	width: 100%;
 	font-family: Lato, Helvetica;
 	font-weight: 300;
 	font-size: 32px;
-	padding-right: 100px;
+	padding-right: 18px;
 	background-color: transparent;
 	color: whitesmoke;
 	text-align: center;
 }	
 
-.links li:visited, li:link, li:active{
+.header_nav_container .links li, .links a {
+	padding-right: 100px;
+}	
+
+.links li:visited, li:link, li:active, .links a:visited, a:link, a:active{
 	color: #CCCCCC;
 	text-decoration: none;
 	cursor: pointer;
@@ -126,9 +137,13 @@ p#home:hover{
 	text-decoration: none;
 	cursor: pointer;
 }
-p#home:hover {
+p#home a{
+	color: goldenrod;
+	padding-right: 18px;
+}
+p#home a:hover{
 	color: #CCCCCC;
-	text-decoration: none;
+	padding-right: 18px;
 	cursor: pointer;
 }
 
@@ -196,13 +211,14 @@ li#about.small_nav, li#work.small_nav, li#contact.small_nav  {
 	position: absolute;
 	top: 100%;
 	width: 100vw;
-	height: 100vh;
+	height: 678px;
 	z-index: 5;
 	background-color: #2E2E2E;
 }
 
 .container.about #skills {
 	position: relative;
+	margin-top: 12px;
 }
 
 .container.about li {
@@ -212,7 +228,7 @@ li#about.small_nav, li#work.small_nav, li#contact.small_nav  {
 	color: #CCCCCC;
 	width: 110px;
 	padding-right: 8px;
-	padding-bottom: 4px;
+	padding-bottom: 6px;
 	display: inline-block;
 }
 
@@ -231,14 +247,15 @@ li#about.small_nav, li#work.small_nav, li#contact.small_nav  {
 }
 
 .container.about #about_header{
-	width: 216px;
-	margin: 70px auto;
-	margin-bottom: 40px;
+	width: 60vw;
+	height: 40px;
+	position: absolute;
+	top: 85px;
+	right: 8%;
+	z-index: 6;
 }
 
 .container.about h1{
-	width: 216px;
-	margin: 5% auto;
 	font-family: Lato, Helvetica;
 	font-weight: 400;
 	font-size: 36px;
@@ -250,6 +267,8 @@ li#about.small_nav, li#work.small_nav, li#contact.small_nav  {
 	width: 20vw;
 	height: 40vh;
 	margin: 0 8%;
+	position: absolute;
+	top: 145px;
 	z-index: 6;
 }
 
@@ -264,7 +283,7 @@ li#about.small_nav, li#work.small_nav, li#contact.small_nav  {
 	width: 60vw;
 	height: 75vh;
 	position: absolute;
-	top: 21%;
+	top: 145px;
 	right: 8%;
 	z-index: 6;
 }
@@ -287,13 +306,14 @@ i.icon-file-alt {
 	z-index: 6;
 }
 #about_me_links{
-	width: 374px;
+	width: 275px;
 	height: auto;
 }
 #about_me_footer li{
-	display: inline;
+	display: block;
+	width: 150px;
 	font-size: 18px;
-	padding-right: 3vw;
+	padding-bottom: 13px;
 }
 #about_me_footer a{
 	font-family: Lato, Helvetica;
@@ -309,9 +329,9 @@ i.icon-file-alt {
 
 .container.work{
 	position: absolute;
-	top: 125%;
+	top: 225%;
 	width: 100vw;
-	height: 110%;
+	height: 125%;
 	z-index: 5;
 	background-color: #474747;
 }
@@ -332,9 +352,8 @@ i.icon-file-alt {
 }
 
 #projects {
-	width: 100vw;
+	width: 90vw;
 	height: auto;
-	display: inline-block;
 	margin: 0 auto;
 	color: #CCCCCC;
 	font-family: Lato, Helvetica;
@@ -385,7 +404,7 @@ i.icon-file-alt {
 
 .container.contact{
 	position: absolute;
-	top: 260%;
+	top: 375%;
 	width: 100vw;
 	height: 100vh;
 	background-color: #616161;

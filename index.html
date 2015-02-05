@@ -9,55 +9,76 @@
 		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
 		<script src="js/application.js" type="text/javascript"></script>
-		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
 	</head>
 	
 	<body>
 		<div class="main_container">
-			<p id="home_tag"><a id="home"></a></p>
-			<div class="header_image">
-				<img src="images/fjord.jpg">
-			</div>		
-			<div class="header_whiteout_div"></div>
+			<p id="page_marker"><a name="home"></a></p>
 			
-			<div class="header">
-				<div class="header_container">
-					<h1>ross elliott<br>
-					wittenberg</h1>
-					<h2>web developer</h2>
-				</div>
-				<div class="header_nav_container">
-					<ul class="links">
-						<li id="about">about me</li>
-						<li id="work">work</li>	
-						<li id="contact">contact</li>
-					</ul>	
-				</div>
-			</div>
 			<div id="arrow_container">
 				<img id="arrow" src="images/arrow.png">
 			</div>
+
+			<div class="header_whiteout_div"></div>
+
+			
+			<div class="header_image">
+				<img src="images/fjord.jpg">
+			</div>
+					
+			
+		<div class="header">
+			
+			<div class="header_container">
+				<h1>ross elliott<br>
+				wittenberg</h1>
+				<h2>web developer</h2>
+			</div>
+
+			<div class="header_nav_container">
+				<ul class="links">
+					<li id="about">about me</li>
+					<li id="work">work</li>	
+					<li id="contact">contact</li>
+				</ul>	
+			</div>
+		</div>
+
+			
 			<div class="nav">
 				<div id="nav_container"></div>	
 					<ul class="links">
-						<p id="home">Ross Elliott Wittenberg</p>
+						<p id="home"><a href="#home">Ross Elliott Wittenberg</a></p>
 						<li class="small_nav" id="about">about me</li>
 						<li class="small_nav" id="work">work</li>	
 						<li class="small_nav" id="contact">contact</li>
 					</ul>
 				</div>	
 			</div>
+			
 			<div class="container about">	
+				<p id="page_marker"><a name="about"></a></p>
 				<div id="about_header">
 					<h1>about me</h1>
 				</div>		
+				
 				<div id="portrait_container">
 					<img src="images/portrait1.jpg">
+					<div id="about_me_footer">
+						<ul id="about_me_links">
+							<li><a href="images/Resume_Ross_Wittenberg.pdf" target="_blank"><i class="fa fa-3x fa-file"></i> CV</a></li>
+							<li><a href="http://www.linkedin.com/in/rosswittenberg/en" target="_blank"><i class="fa fa-3x fa-linkedin-square"></i> LinkedIn</a></li>
+							<li><a href="https://github.com/RossWittenberg" target="_blank"><i class="fa fa-3x fa-github"></i> GitHub</a></li>
+						</ul>	
+					</div>	
 				</div>
+				
 				<div id="text_container">
 					<p>I am full-stack web developer with a project management background and an eye for clean, functional design. I build dynamic web applications using a variety of platforms, frameworks, and languages. For me, creating websites and writing code is a balance between logic and creativity and the intersection of critical thinking and imagination.</p><br>
 					<p>Prior to web development, I worked with a human rights organization as the program and production manager for the Oslo Freedom Forum&mdash;an international human rights summit held annually in Norway. I worked alongside innovators and technologists from around the world and was exposed to alternative understandings and perspectives on how to create, build, and design. It was these fundamental experiences that inspired me to transition to a career in tech.</p><br>
-					<p>Currently, I am located in Brooklyn, New York, but I make sure to escape the city in search of nature and adventure as often as I can. In addition to my passion for programming— I also enjoy travel, playing soccer, landscape photography, and woodworking.</p><br>
+					<p>Currently, I am located in Brooklyn, New York, but I make sure to escape the city in search of nature and adventure as often as I can. In addition to my passion for programming, I enjoy travel, playing soccer, landscape photography, and woodworking.</p><br>
+					
 					<div id="skills">
 						<ul>
 							<li><i class="fa fa-check-square"></i> JavaScript</li>
@@ -79,16 +100,11 @@
 							<li><i class="fa fa-check-square"></i> Adobe CS</li>
 						</ul>	
 					</div>
-					<div id="about_me_footer">
-					<ul id="about_me_links">
-						<li><a href="images/Resume_Ross_Wittenberg.pdf" target="_blank"><i class="fa fa-2x fa-file"></i> CV</a></li>
-						<li><a href="http://www.linkedin.com/in/rosswittenberg/en" target="_blank"><i class="fa fa-2x fa-linkedin-square"></i> LinkedIn</a></li>
-						<li><a href="https://github.com/RossWittenberg" target="_blank"><i class="fa fa-2x fa-github"></i> GitHub</a></li>
-					</ul>	
 				</div>	
 			</div>
 
 			<div class="container work">
+				<p id="page_marker"><a name="work"></a></p>
 				<div id="work_header">
 					<h1>work</h1>
 				</div>
@@ -99,7 +115,7 @@
 						<a href="http://www.weatherscape.com" target="_blank">
 							<img src="images/weather_scape.png"id="weather_scape_thumb">
 						</a>
-						<p>real-time weather app with JS and CSS animations - <a id="github" href="https://github.com/RossWittenberg/weather_scape" target="_blank"><i class="icon-github-sign"></i></a></p>
+						<p>real-time weather app with JS and CSS animations - <a id="github" href="https://github.com/RossWittenberg/weather_scape" target="_blank"><i class="fa fa-github"></i></a></p>
 					</div>			
 					<div id="project">
 						<h2><a href="http://www.sequencepad.com" target="_blank">sequence pad</a></h2>
@@ -107,29 +123,37 @@
 						<a href="http://www.sequencepad.com" target="_blank">
 							<img src="images/sequence_pad.png" id="sequence_pad_thumb">
 						</a>
-						<p>drum machine made with JS - <a id="github" href="https://github.com/RossWittenberg/weather_scape" target="_blank"><i class="icon-github-sign"></i></a></p>
+						<p>drum machine made with JS - <a id="github" href="https://github.com/RossWittenberg/weather_scape" target="_blank"><i class="fa fa-github"></i></a></p>
 					</div>
 					<div id="project">
 						<h2><a href="http://www.searchbar.com" target="_blank">search bar</a></h2>
 						<a href="http://www.searchbar.com" target="_blank">
 							<img src="images/search_bar.png" id="search_bar_thumb">
 						</a>
-						<p>bar-finder Rails app made with 'vanilla' JS - <a id="github" href="https://github.com/RossWittenberg/weather_scape" target="_blank"><i class="icon-github-sign"></i></a></p>
+						<p>bar-finder Rails app made with 'vanilla' JS - <a id="github" href="https://github.com/RossWittenberg/weather_scape" target="_blank"><i class="fa fa-github"></i></a></p>
 					</div>
 					<div id="project">
 						<h2><a href="http://www.travlr.com" target="_blank">travl.r</a></h2>
 						<a href="http://www.travlr.com" target="_blank">
 							<img src="images/travlr.png" id="travlr_thumb">
 						</a>
-						<p>first project. travel/photo-themed micro-blog made with Ruby and Sinatra - <a id="github" href="https://github.com/RossWittenberg/weather_scape" target="_blank"><i class="icon-github-sign"></i></a></p>
+						<p>first project. travel/photo-themed micro-blog made with Ruby and Sinatra - <a id="github" href="https://github.com/RossWittenberg/weather_scape" target="_blank"><i class="fa fa-github"></i></a></p>
 					</div>
 				</div>
 			</div>	
 
-			<div class="container contact">	
+			<div class="container contact">
+				<p id="page_marker"><a name="contact"></a></p>	
 				<div id="contact_header">
 					<h1>contact</h1>
 				</div>	
+				<div id="contact_footer">
+					<ul id="contact_links">
+						<li><a href="images/Resume_Ross_Wittenberg.pdf" target="_blank"><i class="fa fa-2x fa-file"></i> CV</a></li>
+						<li><a href="http://www.linkedin.com/in/rosswittenberg/en" target="_blank"><i class="fa fa-2x fa-linkedin-square"></i> LinkedIn</a></li>
+						<li><a href="https://github.com/RossWittenberg" target="_blank"><i class="fa fa-2x fa-github"></i> GitHub</a></li>
+					</ul>	
+				</div>
 				<div class="form_container">	
 					<form>
 						<label>name: </label><br>
@@ -141,16 +165,7 @@
 						<input type="button" value="email" id="email_button"></input>
 					</form>
 				</div>	
-				<div id="contact_footer">
-					<ul id="contact_links">
-						<li><a href="images/Resume_Ross_Wittenberg.pdf" target="_blank"><i class="fa fa-2x fa-file"></i> CV</a></li>
-						<li><a href="http://www.linkedin.com/in/rosswittenberg/en" target="_blank"><i class="fa fa-2x fa-linkedin-square"></i> LinkedIn</a></li>
-						<li><a href="https://github.com/RossWittenberg" target="_blank"><i class="fa fa-2x fa-github"></i> GitHub</a></li>
-					</ul>	
-				</div>
 			</div>
-
-</body>	
-
-
+		</div>
+	</body>	
 </html>
