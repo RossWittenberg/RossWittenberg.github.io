@@ -1,7 +1,7 @@
 body {
 	padding: 0;
 	margin: 0;
-	font-family: Lato;
+	font-family: Lato, Helvetica;
 	background-color: whitesmoke;
 	color: goldenrod;
 }
@@ -42,7 +42,7 @@ p#home:hover{
 	font-weight: 100;
 	width: 550px;
 	margin: 2% auto;
-	font-family: Lato;
+	font-family: Lato, Helvetica;
 }
 .header_container {
 	position: absolute;
@@ -106,7 +106,7 @@ p#home:hover{
 .links li {
 	display: inline;
 	width: 100%;
-	font-family: Lato;
+	font-family: Lato, Helvetica;
 	font-weight: 300;
 	font-size: 32px;
 	padding-right: 100px;
@@ -172,7 +172,7 @@ li#about.small_nav, li#work.small_nav, li#contact.small_nav  {
 	opacity: .5;
 }
 .nav p{
-	font-family: Lato;
+	font-family: Lato, Helvetica;
 	font-weight: 300;
 	display: inline;
 	padding-top: 4px;
@@ -208,7 +208,7 @@ li#about.small_nav, li#work.small_nav, li#contact.small_nav  {
 .container.about li {
 	font-weight: 300;
 	font-size: 16px;
-	font-family: Lato;
+	font-family: Lato, Helvetica;
 	color: #CCCCCC;
 	width: 110px;
 	padding-right: 8px;
@@ -239,7 +239,7 @@ li#about.small_nav, li#work.small_nav, li#contact.small_nav  {
 .container.about h1{
 	width: 216px;
 	margin: 5% auto;
-	font-family: Lato;
+	font-family: Lato, Helvetica;
 	font-weight: 400;
 	font-size: 36px;
 	color: #CCCCCC;
@@ -269,7 +269,7 @@ li#about.small_nav, li#work.small_nav, li#contact.small_nav  {
 	z-index: 6;
 }
 #text_container p {
-	font-family: Lato;
+	font-family: Lato, Helvetica;
 	font-weight: 300;
 	font-size: 18px;
 	color: #CCCCCC;
@@ -296,7 +296,7 @@ i.icon-file-alt {
 	padding-right: 3vw;
 }
 #about_me_footer a{
-	font-family: Lato;
+	font-family: Lato, Helvetica;
 	text-decoration: none;
 	font-weight: 300;
 	color: #474747;
@@ -324,7 +324,7 @@ i.icon-file-alt {
 .container.work h1{
 	width: 131px;
 	margin: 5% auto;
-	font-family: Lato;
+	font-family: Lato, Helvetica;
 	font-weight: 400;
 	font-size: 36px;
 	color: #CCCCCC;
@@ -337,7 +337,7 @@ i.icon-file-alt {
 	display: inline-block;
 	margin: 0 auto;
 	color: #CCCCCC;
-	font-family: Lato;
+	font-family: Lato, Helvetica;
 	font-weight: 300;
 	font-size: 32px;
 }
@@ -372,7 +372,7 @@ i.icon-file-alt {
 }
 
 #projects a{
-	font-family: Lato;
+	font-family: Lato, Helvetica;
 	text-decoration: none;
 	font-weight: 300;
 	color: #CCCCCC;
@@ -400,7 +400,7 @@ i.icon-file-alt {
 .container.contact h1{
 	width: 172px;
 	margin: 5% auto;
-	font-family: Lato;
+	font-family: Lato, Helvetica;
 	font-weight: 400;
 	font-size: 36px;
 	color: #CCCCCC;
@@ -415,7 +415,7 @@ i.icon-file-alt {
 }
 
 .form_container label {
-	font-family: Lato;
+	font-family: Lato, Helvetica;
 	font-size: 20px;
 	text-transform: uppercase;
 	color: goldenrod;
@@ -424,7 +424,7 @@ i.icon-file-alt {
 .form_container input {
 	position: relative;
 	margin: 10px auto;
-	font-family: Lato;
+	font-family: Lato, Helvetica;
 	color: #CCCCCC;
 	background-color: #474747;
 	width: 100%;
@@ -448,7 +448,7 @@ i.icon-file-alt {
 
 .form_container textarea {
 	margin: 10px auto;
-	font-family: Lato;
+	font-family: Lato, Helvetica;
 	color: #CCCCCC;
 	overflow: auto;
 	background-color: #474747;
@@ -474,7 +474,7 @@ i.icon-file-alt {
 	padding-right: 3vw;
 }
 #contact_footer a{
-	font-family: Lato;
+	font-family: Lato, Helvetica;
 	text-decoration: none;
 	font-weight: 300;
 	color: #474747;
