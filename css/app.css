@@ -6,15 +6,22 @@ body {
 	color: goldenrod;
 }
 
+.main_container {
+	height: 360vh;
+	width: 100vw;
+	overflow: visible;
+	z-index: 0;
+}
+
 #arrow_container {
 	width: 35px;
-	margin: 0 auto;
 }
 
 img#arrow {
 	position: fixed;
 	width: 35px;
-	bottom: 0;
+	bottom: 2vw;
+	right: 2vw;
 	height: auto;
 	z-index: 8;
 }
@@ -34,7 +41,7 @@ p#home:hover{
 .header {
 	font-weight: 100;
 	width: 550px;
-	margin: 10% auto;
+	margin: 2% auto;
 	font-family: Lato;
 }
 .header_container {
@@ -185,7 +192,7 @@ li#about.small_nav, li#work.small_nav, li#contact.small_nav  {
 	cursor: pointer;	
 }
 
-.container.about{
+.container.about {
 	position: absolute;
 	top: 100%;
 	width: 100vw;
@@ -194,11 +201,39 @@ li#about.small_nav, li#work.small_nav, li#contact.small_nav  {
 	background-color: #2E2E2E;
 }
 
+.container.about #skills {
+	position: relative;
+}
+
+.container.about li {
+	font-weight: 300;
+	font-size: 16px;
+	font-family: Lato;
+	color: #CCCCCC;
+	width: 110px;
+	padding-right: 8px;
+	padding-bottom: 4px;
+	display: inline-block;
+}
+
+.container.about i {
+	color: #474747;
+}
+.container.about i:hover {
+	color: goldenrod;
+}
+
+.container.about #skills i {
+	color: goldenrod;
+}
+.container.about #skills i:hover {
+	color: goldenrod;
+}
+
 .container.about #about_header{
 	width: 216px;
 	margin: 70px auto;
 	margin-bottom: 40px;
-
 }
 
 .container.about h1{
@@ -227,9 +262,9 @@ li#about.small_nav, li#work.small_nav, li#contact.small_nav  {
 #text_container {
 	overflow: auto;
 	width: 60vw;
-	height: 60vh;
+	height: 75vh;
 	position: absolute;
-	top: 22%;
+	top: 21%;
 	right: 8%;
 	z-index: 6;
 }
@@ -241,23 +276,24 @@ li#about.small_nav, li#work.small_nav, li#contact.small_nav  {
 	text-align: justify;
 	line-height: 28px;
 }
+
+i.icon-file-alt {
+	font-size: 36px;
+	z-index: 7;
+}
+
 #about_me_footer{
-	width: 380px;
-	height: auto;
-	margin: 0 auto;
+	margin-top: 18px;
 	z-index: 6;
 }
 #about_me_links{
-	width: 380px;
+	width: 374px;
 	height: auto;
-	position: absolute;
-	bottom: 5%;
-	z-index: 6;
 }
-
 #about_me_footer li{
 	display: inline;
-	padding-right: 50px;
+	font-size: 18px;
+	padding-right: 3vw;
 }
 #about_me_footer a{
 	font-family: Lato;
@@ -265,19 +301,15 @@ li#about.small_nav, li#work.small_nav, li#contact.small_nav  {
 	font-weight: 300;
 	color: #474747;
 }
-#about_me_footer a:hover{
+#about_me_footer a:hover, #about_me_footer i:hover{
 	cursor: pointer;
 	color: goldenrod;
 }
 
-i.icon-file-alt {
-	font-size: 36px;
-	z-index: 7;
-}
 
 .container.work{
 	position: absolute;
-	top: 225%;
+	top: 125%;
 	width: 100vw;
 	height: 110%;
 	z-index: 5;
@@ -353,11 +385,103 @@ i.icon-file-alt {
 
 .container.contact{
 	position: absolute;
-	top: 360%;
+	top: 260%;
 	width: 100vw;
 	height: 100vh;
 	background-color: #616161;
 	z-index: 5;
+}
+.container.contact #contact_header{
+	width: 172px;
+	margin: 20px auto;
+	margin-top: 70px;
+}
+
+.container.contact h1{
+	width: 172px;
+	margin: 5% auto;
+	font-family: Lato;
+	font-weight: 400;
+	font-size: 36px;
+	color: #CCCCCC;
+	text-transform: uppercase;
+}
+
+.form_container {
+	position: relative;
+	width: 30vw;
+	height: 300px;
+	margin: 0 auto;
+}
+
+.form_container label {
+	font-family: Lato;
+	font-size: 20px;
+	text-transform: uppercase;
+	color: goldenrod;
+}
+
+.form_container input {
+	position: relative;
+	margin: 10px auto;
+	font-family: Lato;
+	color: #CCCCCC;
+	background-color: #474747;
+	width: 100%;
+	height: 30px;
+	border: none;
+	font-size: 18px;
+}
+
+.form_container input#email_button {
+	margin-top: 10px;
+	height: 40px;
+	font-size: 20px;
+	text-transform: uppercase;
+	background-color: #0C3866;
+	color: #CCCCCC;
+}
+.form_container input#email_button:hover {
+	background-color: goldenrod;
+	cursor: pointer;
+}
+
+.form_container textarea {
+	margin: 10px auto;
+	font-family: Lato;
+	color: #CCCCCC;
+	overflow: auto;
+	background-color: #474747;
+	width: 100%;
+	font-size: 18px;
+	border: none;
+}
+
+#contact_footer{
+	width: 30vw;
+	margin: 10px auto;
+	z-index: 6;
+}
+#contact_links{
+	width: 375px;
+	height: auto;
+	position: absolute;
+	bottom: 3%;
+	z-index: 6;
+}
+#contact_footer li{
+	display: inline;
+	padding-right: 3vw;
+}
+#contact_footer a{
+	font-family: Lato;
+	text-decoration: none;
+	font-weight: 300;
+	color: #474747;
+}
+#contact_footer a:hover{
+	cursor: pointer;
+	color: goldenrod;
 }
 
 
