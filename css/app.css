@@ -13,7 +13,7 @@ body {
 }
 
 .main_container {
-	height: 360vh;
+	height: 500vh;
 	width: 100vw;
 	overflow: visible;
 	z-index: 0;
@@ -211,7 +211,7 @@ li#about.small_nav, li#work.small_nav, li#contact.small_nav  {
 	position: absolute;
 	top: 100%;
 	width: 100vw;
-	height: 678px;
+	height: 97vh;
 	z-index: 5;
 	background-color: #2E2E2E;
 }
@@ -331,7 +331,7 @@ i.icon-file-alt {
 	position: absolute;
 	top: 225%;
 	width: 100vw;
-	height: 125%;
+	height: 97vh;
 	z-index: 5;
 	background-color: #474747;
 }
@@ -353,7 +353,8 @@ i.icon-file-alt {
 
 #projects {
 	width: 90vw;
-	height: auto;
+	height: 76vh;
+	overflow: auto;
 	margin: 0 auto;
 	color: #CCCCCC;
 	font-family: Lato, Helvetica;
@@ -406,7 +407,7 @@ i.icon-file-alt {
 	position: absolute;
 	top: 375%;
 	width: 100vw;
-	height: 100vh;
+	height: 97vh;
 	background-color: #616161;
 	z-index: 5;
 }
