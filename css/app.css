@@ -112,69 +112,45 @@ p#home:hover{
 
 .links li, .links a {
 	display: inline;
+	text-decoration: none;
 	width: 100%;
 	font-family: Lato, Helvetica;
 	font-weight: 300;
-	font-size: 32px;
-	padding-right: 18px;
 	background-color: transparent;
 	color: whitesmoke;
 	text-align: center;
 }	
 
-.header_nav_container .links li, .links a {
+li#about.big_nav a, li#work.big_nav a, li#contact.big_nav a {
+	font-size: 32px;
 	padding-right: 100px;
 }	
 
-.links li:visited, li:link, li:active, .links a:visited, a:link, a:active{
-	color: #CCCCCC;
-	text-decoration: none;
+li#about.big_nav a:hover, li#work.big_nav a:hover, li#contact.big_nav a:hover {
 	cursor: pointer;
-}
+	color: goldenrod;
+}	
 
-.links li:hover {
-	color: #CCCCCC;
-	text-decoration: none;
-	cursor: pointer;
-}
 p#home a{
+	text-decoration: none;
 	color: goldenrod;
 	padding-right: 18px;
 }
 p#home a:hover{
 	color: #CCCCCC;
-	padding-right: 18px;
-	cursor: pointer;
-}
-
-li#about.small_nav, li#work.small_nav, li#contact.small_nav  {
-	font-size: 24px;
-	padding-right: 16px;
-	padding-left: 16px;
-}	
-
-.small_nav li:visited, li:link, li:active{
-	color: silver;
-	text-decoration: none;
-	cursor: pointer;
-}
-
-.small_nav li:hover {
-	color: #CCCCCC;
-	text-decoration: none;
 	cursor: pointer;
 }
 
 .nav {
-	display: none;
 	position: fixed;
 	top: 0;
-	padding: 12px 0;
+	padding: 16px 16px;
 	width: 100vw;
 	background-color: transparent;
 	height: 35px;
 	z-index: 12;
 }
+
 #nav_container{
 	display: none;
 	position: fixed;
@@ -198,10 +174,11 @@ li#about.small_nav, li#work.small_nav, li#contact.small_nav  {
 
 .nav li{
 	font-size: 24px;
+	padding-right: 24px;
 	color: #CCCCCC;
 }
 
-.nav li:hover{
+.nav a:hover{
 	color: goldenrod;
 	text-decoration: none;
 	cursor: pointer;	
