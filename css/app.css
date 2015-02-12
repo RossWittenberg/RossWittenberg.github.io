@@ -340,10 +340,8 @@ i.icon-file-alt {
 	font-size: 32px;
 }
 #project {
-	display: inline;
-	width: 33.33%;
-	padding-top: 10px;
-	float: left;
+	display: inline-block;
+	width: 100%;
 	background-color: transparent;
 }
 
@@ -353,20 +351,21 @@ i.icon-file-alt {
 	right: 55px;	
 }
 #projects img {
-	width: 80%;
+	width: 50%;
 	height: auto;
-	padding-left: 30px;
 }
 #project h2 {
-	width: auto;
-	margin: 0 auto;
 	padding: 20px;
-	font-size: 18px;
+	text-align: center;
+	font-size: 24px;
 }
 #project p{
 	font-size: 18px;
-	width: 78%;
-	margin-left: 28px;
+	width: 40%;
+	display: inline;
+	margin-right: 50px;
+	float: right;
+	line-height: 40px;
 }
 
 #projects a{
@@ -461,7 +460,7 @@ i.icon-file-alt {
 	z-index: 6;
 }
 #contact_links{
-	width: 375px;
+	width: 390px;
 	height: auto;
 	position: absolute;
 	bottom: 3%;
@@ -469,7 +468,8 @@ i.icon-file-alt {
 }
 #contact_footer li{
 	display: inline;
-	padding-right: 3vw;
+	padding-right: 2vw;
+	padding-left: 2.1vw;
 }
 #contact_footer a{
 	font-family: Lato, Helvetica;
